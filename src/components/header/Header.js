@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <ScoreCard />
     </div>
-  );
+  ); 
 };
 
 export default Header;
