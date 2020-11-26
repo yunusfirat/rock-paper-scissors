@@ -1,8 +1,8 @@
 import React from "react";
 import "./Header.css";
 //sub components
-import ScoreCard from "../scorecard/ScoreCard";
-import logo from "../../assets/logo.svg";
+import ScoreCard from "../scoreCard/ScoreCard";
+import logo from "../../assets/svgs/logo.svg";
 
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <ScoreCard />
     </div>
-  ); 
+  );
 };
 
 export default Header;
