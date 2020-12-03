@@ -5,10 +5,16 @@
 }
 
 .App {
-  font-family: Arial, sans-serif;
+  font-family: BarlowSemiCondensed-Bold, Barlow Semi Condensed;
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   background: linear-gradient(#1e3555, #181e40);
+
+}
+
+.position-center {
+  justify-content: center;
+  display: flex;
 }
