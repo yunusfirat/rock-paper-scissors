@@ -1,4 +1,4 @@
-.circularcomponent {
+.circular-component {
   position: relative;
   background: #fff;
   width: 12rem;
@@ -7,20 +7,20 @@
   padding: 1%;
 }
 
-.circularcomponent.paper {
+.circular-component.paper {
   background-image: radial-gradient(#4865F4,#5671F5);
   box-shadow: 0 10px 0px -5px #2944C2;
 }
-.circularcomponent.scissor {
+.circular-component.scissor {
   background-image: radial-gradient(#EC9E0E, #ECA922);
   box-shadow: 0 10px 0px -5px #C76C1B;
 }
-.circularcomponent.rock {
+.circular-component.rock {
   background-image: radial-gradient(#DC2E4E, #DD405D);
   box-shadow: 0 10px 0px -5px #9D1732;
 }
 
-.circularcomponent img {
+.circular-component img {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -43,8 +43,9 @@
   box-shadow: inset 0 10px 3px -5px #BCC0DA;
 }
 
+
 @media only screen and (max-width: 690px) {
-  .circularcomponent {
+  .circular-component {
     width: 10rem;
     height: 10rem;
   }

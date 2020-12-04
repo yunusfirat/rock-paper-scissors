@@ -1,0 +1,91 @@
+.game-result{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    padding: 3% 0% 1% 8%;
+    top: 13rem;
+    width: 68rem;
+
+
+}
+
+.user-choice {
+    width: 50%;
+    margin-top: 3rem;
+
+}
+
+.computer-choice {
+    width: 50%;
+    margin-top: 3rem;
+
+}
+
+.play-again{
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 350px;
+    justify-content: center;
+    visibility: visible;
+}
+
+.choice-result-choice {
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 350px;
+    justify-content: center;
+}
+.choice-result-text {
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.choice-result-text2 {
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    margin-top: 5rem;
+}
+
+.btn-play-again {
+    margin-top: 5px;
+    color: #1e3555;
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    background-color: white;
+    font-weight: bolder;
+}
+
+.btn-play-again:hover {
+    color: #EA0835;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+
+@media only screen and (max-width: 690px) {
+    .game-result {
+        width: 30rem;
+    }
+
+    .play-again{
+        margin-top: 200px;
+    }
+}
+
+
+@keyframes play-again {
+    0%   {left: 500px}
+    25%  {left: 500px}
+    50%  {left: 600px}
+    75%  {left: 600px}
+    100% {left: 640px}
+}

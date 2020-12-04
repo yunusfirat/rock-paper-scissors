@@ -1,4 +1,4 @@
-.basic {
+.basic{
   display: flex;
   background-image: url("../../assets/bg-triangle.svg");
   background-repeat: no-repeat;
@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid #fff; */
+  background-color: red;
 }
 
 .basic-top {
