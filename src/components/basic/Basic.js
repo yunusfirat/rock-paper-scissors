@@ -1,6 +1,6 @@
 import React from "react";
 import "./Basic.css";
-import CircularComponent from "../../components/circularcomponent/CircularComponent";
+import CircularComponent from "../circularComponent/CircularComponent";
 const Basic = () => {
   return (
     <div className="basic">
@@ -16,3 +16,4 @@ const Basic = () => {
 };
 
 export default Basic;
+ 
