@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import {Switch, Route} from "react-router-dom";
 import Header from "./components/header/Header";
-import GameBoard from "./components/gameBoard/GameBoard";
+import GameBoard from "./components/gameboard/GameBoard";
 import PlayAgain from "./components/playAgain/PlayAgain";
 
 
