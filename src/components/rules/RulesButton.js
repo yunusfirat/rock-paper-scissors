@@ -4,7 +4,7 @@ import './RulesButton.css';
 import BasicRules from './basicrules/BasicRules'
 
 const RulesButton = ({handleClick}) => {
-    //if basic show basic rules if advanced show advanced rules
+    //if basic show basic rules if advanced show advanced rules testing
 
     return <button className='basicrules' name= 'basic' onClick={handleClick}>RULES</button>
 }
