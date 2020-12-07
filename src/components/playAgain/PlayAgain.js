@@ -26,7 +26,7 @@ const PlayAgain = (props) => {
         const timer = setTimeout(() => {
             const result = getWinner(userChoice, computerChoice)
             setResultText(result)
-        }, 2000);
+        }, 200);
         return () => clearTimeout(timer);
     }, [userChoice, computerChoice])
 
@@ -41,41 +41,34 @@ const PlayAgain = (props) => {
     }
 
     return (
-        <div className="game-result">
-
-            <div className="basic-top">
-                <div className="choice-result-choice">
-                    <div className="choice-result-text">YOUR CHOICE</div>
-
+        <div className="play-board">
+            <div className="play-board-choice">
+                <div className="circular-spot"></div>
+                <h2>YOU PICKED</h2>
+                <div >
                     <CircularComponent
                         componentName={userChoice}
                     />
                 </div>
-
-                {resultText !== '' ?
-                <div className="play-again">
-                    <div className="choice-result-text2">{resultText}</div>
-                    <div>
-                        <button type="button" className="button btn-play-again" onClick={() => redirectToGameBoard()}>
-                            PLAY AGAIN
-                        </button>
-                    </div>
-                </div>
-                    : <div></div>}
-
-                <div className="choice-result-choice">
-                    <div className="choice-result-text">COMPUTER CHOICE</div>
-
-
-                    {resultText !== '' ?
-                        <CircularComponent
-                            componentName={computerChoice}
-                        />
-                        : <div></div>
-                    }
-                </div>
             </div>
 
+            <div className="play-again visible">
+                <h1>{resultText}</h1>
+                <button onClick={() => redirectToGameBoard()}>PLAY AGAIN</button>
+            </div>
+
+            <div className="play-board-choice">
+                <div className="circular-spot"></div>
+                    {resultText !== '' ?
+                    <div >
+                        <h2>THE HOUSE PICKED</h2>
+                            <CircularComponent
+                                componentName={computerChoice}
+                            />
+                    </div>
+                        : <div></div>
+                    }
+            </div>
         </div>
     )
 }
