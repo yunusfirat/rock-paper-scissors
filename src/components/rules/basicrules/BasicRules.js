@@ -3,7 +3,9 @@ import './BasicRules.css';
 import basicRulesImage from '../../../assets/svgs/image-rules.svg';
 
 
+
 const BasicRules = ({rulescard, handleClick}) => {
+
     return <div className={rulescard ? 'rules-container visible' : 'rules-container hidden'}>
         <div className='card'>
             <div className='card-header'>
