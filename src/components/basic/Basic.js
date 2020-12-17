@@ -2,10 +2,8 @@ import React from "react";
 import "./Basic.css";
 import CircularComponent from "../circularComponent/CircularComponent";
 const Basic = () => {
-
   return (
     <div className="basic">
-
       <div className="basic-top">
         <CircularComponent source="basic" componentName="paper" />
         <CircularComponent source="basic" componentName="scissor" />
@@ -18,4 +16,3 @@ const Basic = () => {
 };
 
 export default Basic;
- 

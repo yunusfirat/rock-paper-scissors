@@ -1,7 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import button from '../../assets/css/button.css'
 import './PlayAgain.css'
-import CircularComponent from "../circularcomponent/CircularComponent";
+import CircularComponent from "../circularComponent/CircularComponent";
 import {gameContext} from "../../context/gameContext";
 import {withRouter} from "react-router-dom";
 
@@ -26,7 +26,7 @@ const PlayAgain = (props) => {
         const timer = setTimeout(() => {
             const result = getWinner(userChoice, computerChoice)
             setResultText(result)
-        }, 200);
+        }, 2000);
         return () => clearTimeout(timer);
     }, [userChoice, computerChoice])
 
@@ -41,34 +41,41 @@ const PlayAgain = (props) => {
     }
 
     return (
-        <div className="play-board">
-            <div className="play-board-choice">
-                <div className="circular-spot"></div>
-                <h2>YOU PICKED</h2>
-                <div >
+        <div className="game-result">
+
+            <div className="basic-top">
+                <div className="choice-result-choice">
+                    <div className="choice-result-text">YOUR CHOICE</div>
+
                     <CircularComponent
                         componentName={userChoice}
                     />
                 </div>
-            </div>
 
-            <div className="play-again visible">
-                <h1>{resultText}</h1>
-                <button onClick={() => redirectToGameBoard()}>PLAY AGAIN</button>
-            </div>
-
-            <div className="play-board-choice">
-                <div className="circular-spot"></div>
-                    {resultText !== '' ?
-                    <div >
-                        <h2>THE HOUSE PICKED</h2>
-                            <CircularComponent
-                                componentName={computerChoice}
-                            />
+                {resultText !== '' ?
+                <div className="play-again">
+                    <div className="choice-result-text2">{resultText}</div>
+                    <div>
+                        <button type="button" className="button btn-play-again" onClick={() => redirectToGameBoard()}>
+                            PLAY AGAIN
+                        </button>
                     </div>
+                </div>
+                    : <div></div>}
+
+                <div className="choice-result-choice">
+                    <div className="choice-result-text">COMPUTER CHOICE</div>
+
+
+                    {resultText !== '' ?
+                        <CircularComponent
+                            componentName={computerChoice}
+                        />
                         : <div></div>
                     }
+                </div>
             </div>
+
         </div>
     )
 }

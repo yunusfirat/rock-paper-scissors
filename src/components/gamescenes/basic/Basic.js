@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Basic.css";
-import CircularComponent from "../../circularcomponent/CircularComponent";
+import CircularComponent from "../../circularComponent/CircularComponent";
 const Basic = () => {
 
   return (
